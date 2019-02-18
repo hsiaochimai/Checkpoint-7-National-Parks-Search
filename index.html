@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Park Search</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>National Parks Search</h1>
+        <form id="api-search">
+            <label for="search-state">Search States</label>
+            <input type="text" name="stateCode"placeholder="Ex. VA, OR" id="js-stateCode" required>
+            <br>
+
+            <label for="max-results">Maximum Results to return</label>
+            <input type="number" name="limit" id="js-limit" placeholder="10">
+
+            <input type="submit" value="Search">
+        </form>
+        <h2 class="headline hidden">Search Results</h2>
+        <section id="results" class="hidden">
+            <ul id="results-list"></ul>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
